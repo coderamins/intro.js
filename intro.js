@@ -625,6 +625,8 @@
       tooltipCssClass = this._options.tooltipClass;
     }
 
+    //set custom width of tooltip
+    tooltipLayer.style.width = this._introItems[this._currentStep].width + "px";
     tooltipLayer.className = ('introjs-tooltip ' + tooltipCssClass).replace(/^\s+|\s+$/g, '');
     tooltipLayer.setAttribute('role', 'dialog');
 
